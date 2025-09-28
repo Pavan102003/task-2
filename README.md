@@ -1,6 +1,7 @@
 # task-2
 
 Public Service URL : https://312hnv8mfb.execute-api.us-east-1.amazonaws.com/prod/summarize
+
 Test Command : curl -X POST "https://312hnv8mfb.execute-api.us-east-1.amazonaws.com/prod/summarize" -H "Content-Type: application/json" -d "{\"url\": \"https://www.gutenberg.org/files/2701/2701-h/2701-h.htm\"}"
 
 #Project Gutenberg (PG) URLs contain static, plain HTML files of books and documents. 
