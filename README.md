@@ -2,28 +2,18 @@ Serverless News Summarizer API (Challenge 2)
 
 This project creates a scalable, on-demand REST API using AWS Lambda and API Gateway that summarizes any news article URL using an external NLP model.
 
-Public Service URL :
+Public Service URL : https://312hnv8mfb.execute-api.us-east-1.amazonaws.com/prod/summarize
 
-https://312hnv8mfb.execute-api.us-east-1.amazonaws.com/prod/summarize
-
-Test Command :
-
-curl -X POST "https://312hnv8mfb.execute-api.us-east-1.amazonaws.com/prod/summarize" -H "Content-Type: application/json" -d "{\"url\": \"https://www.gutenberg.org/files/2701/2701-h/2701-h.htm\"}"
+Test Command : curl -X POST "https://312hnv8mfb.execute-api.us-east-1.amazonaws.com/prod/summarize" -H "Content-Type: application/json" -d "{\"url\": \"https://www.gutenberg.org/files/2701/2701-h/2701-h.htm\"}"
 
 Live Demo : 
 
 
-Serverless Stack : 
+Serverless Stack : AWS Lambda, Amazon API Gateway, AWS DynamoDB (for caching).
 
-AWS Lambda, Amazon API Gateway, AWS DynamoDB (for caching).
+AI Tooling : NLP Cloud (BART-Large-CNN model).
 
-AI Tooling : 
-
-NLP Cloud (BART-Large-CNN model).
-
-Bonus Feature :
-
-Caching: Results for repeated URLs are stored and retrieved from the DynamoDB table, marked by "cached": true.
+Bonus Feature : Caching: Results for repeated URLs are stored and retrieved from the DynamoDB table, marked by "cached": true.
 
 
 #Project Gutenberg (PG) URLs contain static, plain HTML files of books and documents. 
