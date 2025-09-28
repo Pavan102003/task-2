@@ -1,0 +1,5 @@
+requests                  # For fetching the article URL content
+beautifulsoup4            # For parsing HTML and extracting clean text
+# Add the SDK for your chosen summarization API here, e.g.:
+# apyhub-api
+# or a specific package if you use a cloud model like boto3 (AWS SDK)

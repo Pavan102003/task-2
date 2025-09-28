@@ -1,0 +1,10 @@
+version = 0.1
+
+[default.deploy.parameters]
+stack_name = "NewsSummarizerTask2"
+resolve_s3 = true
+s3_prefix = "NewsSummarizerTask2"
+region = "us-east-1"
+profile = "task-2-profile"
+capabilities = "CAPABILITY_IAM"
+image_repositories = []
