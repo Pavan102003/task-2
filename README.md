@@ -2,9 +2,9 @@ Serverless News Summarizer API (Challenge 2)
 
 This project creates a scalable, on-demand REST API using AWS Lambda and API Gateway that summarizes any news article URL using an external NLP model.
 
-Public Service URL : https://312hnv8mfb.execute-api.us-east-1.amazonaws.com/prod/summarize
+Public Service URL : https://1m6kelu2ti.execute-api.us-east-1.amazonaws.com/prod/summarize
 
-Test Command : curl -X POST "https://312hnv8mfb.execute-api.us-east-1.amazonaws.com/prod/summarize" -H "Content-Type: application/json" -d "{\"url\": \"https://www.gutenberg.org/files/2701/2701-h/2701-h.htm\"}"
+Test Command : curl -X POST "https://1m6kelu2ti.execute-api.us-east-1.amazonaws.com/prod/summarize" -H "Content-Type: application/json" -d "{\"url\": \"https://www.gutenberg.org/files/2701/2701-h/2701-h.htm\"}"
 
 Live Demo : 
 
@@ -74,11 +74,11 @@ JSON
 
 # Results looks like in Command Prompt
 
-C:\Users\pavan\OneDrive\Desktop\Task 2>curl -X POST "https://312hnv8mfb.execute-api.us-east-1.amazonaws.com/prod/summarize" -H "Content-Type: application/json" -d "{\"url\": \"https://www.gutenberg.org/files/2701/2701-h/2701-h.htm\"}"
+curl -X POST "https://1m6kelu2ti.execute-api.us-east-1.amazonaws.com/prod/summarize" -H "Content-Type: application/json" -d "{\"url\": \"https://www.gutenberg.org/files/2701/2701-h/2701-h.htm\"}"
 {"url": "https://www.gutenberg.org/files/2701/2701-h/2701-h.htm", "summary": "This text is a combination of etexts, one from the now-defunct ERIS project at Virginia Tech and one from Project Gutenberg\u2019s archives. The resulting etext was compared with a public domain hard copy version of the text. \u201cA whale-fish is to be called in our tongue, leaving out, through ignorance, the letter H, which almost alone maketh up the signification of the word.\u201d \u2014Hackluyt.", "cached": false}
 
 
 
-C:\Users\pavan\OneDrive\Desktop\Task 2>curl -X POST "https://312hnv8mfb.execute-api.us-east-1.amazonaws.com/prod/summarize" -H "Content-Type: application/json" -d "{\"url\": \"https://www.gutenberg.org/files/2701/2701-h/2701-h.htm\"}"
-{"url": "https://www.gutenberg.org/files/2701/2701-h/2701-h.htm", "summary": "This text is a combination of etexts, one from the now-defunct ERIS project at Virginia Tech and one from Project Gutenberg\u2019s archives. The resulting etext was compared with a public domain hard copy version of the text. \u201cA whale-fish is to be called in our tongue, leaving out, through ignorance, the letter H, which almost alone maketh up the signification of the word.\u201d \u2014Hackluyt.", "cached": false}
+curl -X POST "https://1m6kelu2ti.execute-api.us-east-1.amazonaws.com/prod/summarize" -H "Content-Type: application/json" -d "{\"url\": \"https://www.gutenberg.org/files/2701/2701-h/2701-h.htm\"}"
+{"url": "https://www.gutenberg.org/files/2701/2701-h/2701-h.htm", "summary": "This text is a combination of etexts, one from the now-defunct ERIS project at Virginia Tech and one from Project Gutenberg\u2019s archives. The resulting etext was compared with a public domain hard copy version of the text. \u201cA whale-fish is to be called in our tongue, leaving out, through ignorance, the letter H, which almost alone maketh up the signification of the word.\u201d \u2014Hackluyt.", "cached": true}
 
