@@ -6,7 +6,7 @@ Public Service URL : https://1m6kelu2ti.execute-api.us-east-1.amazonaws.com/prod
 
 Test Command : curl -X POST "https://1m6kelu2ti.execute-api.us-east-1.amazonaws.com/prod/summarize" -H "Content-Type: application/json" -d "{\"url\": \"https://www.gutenberg.org/files/2701/2701-h/2701-h.htm\"}"
 
-Live Demo : 
+Live Demo : https://drive.google.com/file/d/1QO37uaoIxluvjROC9SUvQbQ2ttguvLm1/view?usp=drivesdk 
 
 
 Serverless Stack : AWS Lambda, Amazon API Gateway, AWS DynamoDB (for caching).
